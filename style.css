@@ -4,7 +4,7 @@ body
   margin-right:40px;
 }
 
-.table_of_contents, tr
+.table_of_contents, table, td
 {
   border: 1px solid;
 }
