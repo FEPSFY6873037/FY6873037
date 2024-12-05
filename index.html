@@ -64,6 +64,50 @@
     </div>
     <hr>
 
+    <p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const p1 = displayWordCount("1_test");
+    const p2 = displayWordCount("2_test");
+    const p3 = displayWordCount("3_test");
+    const p4 = displayWordCount("4_test");
+    const p5 = displayWordCount("5_test");
+    const p6 = displayWordCount("6_test");
+    const p7 = displayWordCount("7_test");
+    const p8 = displayWordCount("8_test");
+    const p9 = displayWordCount("9_test");
+    const p10 = displayWordCount("10_test");
+    const p11 = displayWordCount("11_test");
+    const p12 = displayWordCount("12_test");
+    const p13 = displayWordCount("13_test");
+    const p14 = displayWordCount("14_test");
+    const p15 = displayWordCount("15_test");
+    const p16 = displayWordCount("16_test");
+    const p17 = displayWordCount("17_test");
+    // Calculate the sum of all selected sections
+    const totalWordCount = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16 p17;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
+    <hr>
+
   <div id="intro">
         <h1 id = intro_header>Introduction</h1>
         <div id="intro_container">
@@ -319,48 +363,7 @@
     </script>
 
     <!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const p1 = displayWordCount("1_test");
-    const p2 = displayWordCount("2_test");
-    const p3 = displayWordCount("3_test");
-    const p4 = displayWordCount("4_test");
-    const p5 = displayWordCount("5_test");
-    const p6 = displayWordCount("6_test");
-    const p7 = displayWordCount("7_test");
-    const p8 = displayWordCount("8_test");
-    const p9 = displayWordCount("9_test");
-    const p10 = displayWordCount("10_test");
-    const p11 = displayWordCount("11_test");
-    const p12 = displayWordCount("12_test");
-    const p13 = displayWordCount("13_test");
-    const p14 = displayWordCount("14_test");
-    const p15 = displayWordCount("15_test");
-    const p16 = displayWordCount("16_test");
-    const p17 = displayWordCount("17_test");
-    // Calculate the sum of all selected sections
-    const totalWordCount = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16 p17;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
+
     
 
     
