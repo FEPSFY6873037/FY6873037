@@ -59,3 +59,10 @@ tr.table_of_contents
 {
   text-align: center;
 }
+
+
+#header_container
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
