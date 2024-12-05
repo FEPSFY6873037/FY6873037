@@ -20,6 +20,10 @@ tr.table_of_contents
   grid-template-columns: 50% 50%;
 }
 
+#crash_vid_container
+{
+  text-align: center;
+}
 
 
 #intro_header
@@ -38,4 +42,20 @@ tr.table_of_contents
 {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+#email_container
+{
+  text-align: center;
+}
+
+#Modern_container
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#WANNACRY_Container
+{
+  text-align: center;
 }
