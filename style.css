@@ -4,9 +4,14 @@ body
   margin-right:40px;
 }
 
+div
+{
+  padding: 10px 10px:
+}
+
 p
 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 tr.table_of_contents
