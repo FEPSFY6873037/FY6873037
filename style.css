@@ -14,11 +14,11 @@ p
   font-size: 24px;
 }
 
-tr.table_of_contents
+table, td
 {
   border: 1px solid;
 }
-
+  
 #intro_container
 {
   display: grid;
