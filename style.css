@@ -76,3 +76,8 @@ table
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
+#Evolutonvid
+{
+  text-align: center;
+}
